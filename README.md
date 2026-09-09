@@ -31,7 +31,7 @@ Bouw de onderstaande vensters zo goed mogelijk na. **Lees eerst aandachtig alle 
 	<img src="media/favourites.png" height="600" alt="favourites"/>
 	<img src="media/tickets.png" height="600" alt="tickets"/>
 	<img src="media/order.png" height="600" alt="order"/>
-	<img src="media/account.png" height="600" alt="account"/>
+	<img src="media/settings.png" height="600" alt="settings"/>
 </figure>
 
 ### Dark mode
@@ -44,12 +44,12 @@ Bouw de onderstaande vensters zo goed mogelijk na. **Lees eerst aandachtig alle 
 	<img src="media/order_invalidemail.png" height="600" alt="order"/>
 	<img src="media/order_validemail.png" height="600" alt="order"/>
 	<img src="media/order_address.png" height="600" alt="order"/>
-	<img src="media/account_dark.png" height="600" alt="account"/>
+	<img src="media/settings_dark.png" height="600" alt="settings"/>
 </figure>
 
 ## Pages
 - MainPage
-- Pages/AccountPage
+- Pages/SettingsPage
 - Pages/FavouritesPage
 - Pages/InfoPage
 - Pages/LineupPage
@@ -57,16 +57,17 @@ Bouw de onderstaande vensters zo goed mogelijk na. **Lees eerst aandachtig alle 
 - Pages/TicketPage
 
 ### MainPage
-- Afbeelding met [Shadow](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/shadow?view=net-maui-8.0) effect in de *Primary* kleur
+- Afbeelding met [Shadow](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/shadow) effect in de *Primary* kleur
+- ToolbarItem voor navigatie naar de Settings-*page*
 - Buttons voor navigatie naar diverse *pages* met een algemene stijl *NavigationButtonStyle*:
-	- De achtergrond is [linear gradient](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/brushes/lineargradient?view=net-maui-8.0)
+	- De achtergrond is [linear gradient](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/brushes/lineargradient)
 	- Het lettertype is "Helvetica..."
 	- De hoeken zijn afgerond met waarde 15
 	- De contentlayout eigenschap heeft een waarde van "Left, 40"
 	- De witruimte binnen het element is 14,10
 	- De tekstkleur is afhankelijk van het thema *White* of *Black* (zie [colors](#colors))
 
-### AccountPage
+### Settings
 - Gebruik een gepaste layout met een *Label* en een *Switch*
 - Gebruik het *Toggled* event van de *switch* om te wisselen tussen *Light* en *Dark* mode, gebruik hiervoor de functie *Application.Current.UserAppTheme*
 - Gebruik het *Appearing* event van de *ContentPage* om de default waarde van de *switch* te bepalen 
